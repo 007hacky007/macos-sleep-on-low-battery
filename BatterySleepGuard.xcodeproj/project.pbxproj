@@ -1,0 +1,580 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		122D149E493AB3A5B40E3F3F /* HistoryEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 87A17CC9B0816434F881FAE3 /* HistoryEntry.swift */; };
+		21E1B567BF11CCE8CC2ADCF2 /* BatteryTelemetry.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C94FA535A5B4D073DC73EEC /* BatteryTelemetry.swift */; };
+		3C382EF1A8A75FA2217215F2 /* ProcessUsageTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3F39F9ECF754C8F204D28E19 /* ProcessUsageTests.swift */; };
+		3D56AF872BF152DEF9C186EB /* ProcessEnergyMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 854FEAC5348D32C78A1E23C1 /* ProcessEnergyMonitor.swift */; };
+		45D5CC1E8D572A0A48A13D08 /* ProcessUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = E8BFD29CAABDA27FB470969E /* ProcessUsage.swift */; };
+		551D9D488CFF96D1C59E4531 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8EFB5596E5A0657A6D6EF015 /* AppSettings.swift */; };
+		62EC0FC883EAB41B6498EE9E /* BatteryLogicTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A92ABAFA41B26A7D698F34A /* BatteryLogicTests.swift */; };
+		66207D0AC837644A1039EE67 /* ProcessesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DC08BE693BFC44F75C20CAA0 /* ProcessesView.swift */; };
+		6AC81F08DB1856497D72992C /* MenuBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E07D27CD6C778497857541 /* MenuBarViewModel.swift */; };
+		6E71426DA41E020360B327E3 /* SystemClock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0046DAAEBA7BE2EE65C666AF /* SystemClock.swift */; };
+		6EC1F7824B17D90BEED5CB75 /* ChartPalette.swift in Sources */ = {isa = PBXBuildFile; fileRef = 38B54487F2EFBB40484315CE /* ChartPalette.swift */; };
+		789F7881CBC16071584892C0 /* BatterySample.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3743DEC447E47547B9D81AF /* BatterySample.swift */; };
+		8C7F1688ACE1AEF6442BD482 /* BatteryMonitor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2C82C08F5F1AD641489603A0 /* BatteryMonitor.swift */; };
+		8EF8ABCFBED451FC4CD070EA /* StatisticsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 207E895E5AAE5917CFE09421 /* StatisticsView.swift */; };
+		995701040DD19384CC04DB6B /* SleepTriggerPolicy.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5B4ABCB0FC1E07BBCB7F513 /* SleepTriggerPolicy.swift */; };
+		A00ADE5E21CD7A49B11C84EE /* CPUTemperatureSensor.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFF1F409FEFD3D6321265A42 /* CPUTemperatureSensor.swift */; };
+		A8F4A413A2E1073C57F82938 /* ChartSeries.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23963402ABEB124875A39876 /* ChartSeries.swift */; };
+		B480336DE9E3833AC9FD1555 /* PersistenceService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2268EB5DF89AEEE917A8F5A2 /* PersistenceService.swift */; };
+		B90DB1544963DC4519E42CE6 /* Formatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = 007EBB2E9C59D7793983DFCC /* Formatting.swift */; };
+		BF0F9173B8132BB7E53F246E /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E90AB8FD4F1AC14CD5A37DA9 /* SettingsView.swift */; };
+		BF9D255180BC4F978C11C175 /* DrainRateCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F8BB348B2CD36ADABE2CBF4 /* DrainRateCalculator.swift */; };
+		CE95411B828F36DCA991D3C9 /* BatterySleepGuardApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B07DAE777EE64AA4367DAC0C /* BatterySleepGuardApp.swift */; };
+		D1F643590C3EE59AC0EEC4D0 /* SleepController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0E88F595799B2C0E89ACE4C3 /* SleepController.swift */; };
+		D2E2D40BF5C5FEBAE0223F68 /* LoginItemManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70F9939DE5B6D8146850C6D5 /* LoginItemManager.swift */; };
+		D8C5A103282176A5DC45677B /* HistoryTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9E31B20C7235050C7D4F30F8 /* HistoryTests.swift */; };
+		E2EE7C76D39F489819F05025 /* KeepAwakeService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58F7904900FBBE79D050D41C /* KeepAwakeService.swift */; };
+		E550085B7676654C07DC8C0A /* WindowVisibilityObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6EA60F226F7413F2090CD5AF /* WindowVisibilityObserver.swift */; };
+		E76F159C2D610CB8E5F472AF /* HistoryStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1FFE2921842ABFF498FCA33 /* HistoryStore.swift */; };
+		EBA8422CB14C1D06AD63DE12 /* NotificationService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CEDD761C41361335C0B5DD9 /* NotificationService.swift */; };
+		ED2D5CBCDDB4011C171482CC /* BatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D848C5E2D54B8BDC5475C3A6 /* BatchTests.swift */; };
+		F154D5A793BAB79D2B12F63A /* MenuBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7CDE2F176AE9C6BECF65F1F2 /* MenuBarView.swift */; };
+		F7FCBDE29250ED2AFCE5FB41 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC83E1FA7592DE005BFE20E4 /* Assets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		50571B1DA6216053267A6008 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F59CCBF5D92114B754948CC4 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5E7BEE2FEDEEB07C3C53DA30;
+			remoteInfo = BatterySleepGuard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0046DAAEBA7BE2EE65C666AF /* SystemClock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SystemClock.swift; sourceTree = "<group>"; };
+		007EBB2E9C59D7793983DFCC /* Formatting.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Formatting.swift; sourceTree = "<group>"; };
+		0CEDD761C41361335C0B5DD9 /* NotificationService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationService.swift; sourceTree = "<group>"; };
+		0E88F595799B2C0E89ACE4C3 /* SleepController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepController.swift; sourceTree = "<group>"; };
+		1A92ABAFA41B26A7D698F34A /* BatteryLogicTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryLogicTests.swift; sourceTree = "<group>"; };
+		1F6C698A4470799B874DFF56 /* BatterySleepGuardTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = BatterySleepGuardTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		207E895E5AAE5917CFE09421 /* StatisticsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatisticsView.swift; sourceTree = "<group>"; };
+		2268EB5DF89AEEE917A8F5A2 /* PersistenceService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistenceService.swift; sourceTree = "<group>"; };
+		23963402ABEB124875A39876 /* ChartSeries.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartSeries.swift; sourceTree = "<group>"; };
+		27E07D27CD6C778497857541 /* MenuBarViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarViewModel.swift; sourceTree = "<group>"; };
+		2C82C08F5F1AD641489603A0 /* BatteryMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryMonitor.swift; sourceTree = "<group>"; };
+		2C94FA535A5B4D073DC73EEC /* BatteryTelemetry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatteryTelemetry.swift; sourceTree = "<group>"; };
+		38B54487F2EFBB40484315CE /* ChartPalette.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartPalette.swift; sourceTree = "<group>"; };
+		3F39F9ECF754C8F204D28E19 /* ProcessUsageTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessUsageTests.swift; sourceTree = "<group>"; };
+		45920250C61F81777BCAD66B /* BatterySleepGuard.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatterySleepGuard.entitlements; sourceTree = "<group>"; };
+		4BBBB637F9404713F7E6BBF6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		58F7904900FBBE79D050D41C /* KeepAwakeService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepAwakeService.swift; sourceTree = "<group>"; };
+		6EA60F226F7413F2090CD5AF /* WindowVisibilityObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WindowVisibilityObserver.swift; sourceTree = "<group>"; };
+		6F8BB348B2CD36ADABE2CBF4 /* DrainRateCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrainRateCalculator.swift; sourceTree = "<group>"; };
+		70F9939DE5B6D8146850C6D5 /* LoginItemManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginItemManager.swift; sourceTree = "<group>"; };
+		7CDE2F176AE9C6BECF65F1F2 /* MenuBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarView.swift; sourceTree = "<group>"; };
+		854FEAC5348D32C78A1E23C1 /* ProcessEnergyMonitor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessEnergyMonitor.swift; sourceTree = "<group>"; };
+		87A17CC9B0816434F881FAE3 /* HistoryEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryEntry.swift; sourceTree = "<group>"; };
+		8EFB5596E5A0657A6D6EF015 /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		9E31B20C7235050C7D4F30F8 /* HistoryTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryTests.swift; sourceTree = "<group>"; };
+		A5B4ABCB0FC1E07BBCB7F513 /* SleepTriggerPolicy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepTriggerPolicy.swift; sourceTree = "<group>"; };
+		AFF1F409FEFD3D6321265A42 /* CPUTemperatureSensor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUTemperatureSensor.swift; sourceTree = "<group>"; };
+		B07DAE777EE64AA4367DAC0C /* BatterySleepGuardApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatterySleepGuardApp.swift; sourceTree = "<group>"; };
+		B3743DEC447E47547B9D81AF /* BatterySample.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatterySample.swift; sourceTree = "<group>"; };
+		D848C5E2D54B8BDC5475C3A6 /* BatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BatchTests.swift; sourceTree = "<group>"; };
+		DC08BE693BFC44F75C20CAA0 /* ProcessesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessesView.swift; sourceTree = "<group>"; };
+		DEB3970083E7AC1A570746DC /* BatterySleepGuard.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatterySleepGuard.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8BFD29CAABDA27FB470969E /* ProcessUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProcessUsage.swift; sourceTree = "<group>"; };
+		E90AB8FD4F1AC14CD5A37DA9 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		F1FFE2921842ABFF498FCA33 /* HistoryStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryStore.swift; sourceTree = "<group>"; };
+		FC83E1FA7592DE005BFE20E4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		192A6AA66E313BDCCFB4B383 /* BatterySleepGuard */ = {
+			isa = PBXGroup;
+			children = (
+				FC83E1FA7592DE005BFE20E4 /* Assets.xcassets */,
+				45920250C61F81777BCAD66B /* BatterySleepGuard.entitlements */,
+				4BBBB637F9404713F7E6BBF6 /* Info.plist */,
+				6C65271624908534E76685AB /* App */,
+				2C24731D07E468020F04F46A /* Models */,
+				461CAEE1C2C50CB7DA7D3C46 /* Services */,
+				69AE29A76D07A6FF6BA6A262 /* ViewModels */,
+				9D84768F9BC595A9C95584C1 /* Views */,
+			);
+			path = BatterySleepGuard;
+			sourceTree = "<group>";
+		};
+		2C24731D07E468020F04F46A /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8EFB5596E5A0657A6D6EF015 /* AppSettings.swift */,
+				B3743DEC447E47547B9D81AF /* BatterySample.swift */,
+				2C94FA535A5B4D073DC73EEC /* BatteryTelemetry.swift */,
+				23963402ABEB124875A39876 /* ChartSeries.swift */,
+				6F8BB348B2CD36ADABE2CBF4 /* DrainRateCalculator.swift */,
+				87A17CC9B0816434F881FAE3 /* HistoryEntry.swift */,
+				E8BFD29CAABDA27FB470969E /* ProcessUsage.swift */,
+				A5B4ABCB0FC1E07BBCB7F513 /* SleepTriggerPolicy.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		461CAEE1C2C50CB7DA7D3C46 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2C82C08F5F1AD641489603A0 /* BatteryMonitor.swift */,
+				AFF1F409FEFD3D6321265A42 /* CPUTemperatureSensor.swift */,
+				F1FFE2921842ABFF498FCA33 /* HistoryStore.swift */,
+				58F7904900FBBE79D050D41C /* KeepAwakeService.swift */,
+				70F9939DE5B6D8146850C6D5 /* LoginItemManager.swift */,
+				0CEDD761C41361335C0B5DD9 /* NotificationService.swift */,
+				2268EB5DF89AEEE917A8F5A2 /* PersistenceService.swift */,
+				854FEAC5348D32C78A1E23C1 /* ProcessEnergyMonitor.swift */,
+				0E88F595799B2C0E89ACE4C3 /* SleepController.swift */,
+				0046DAAEBA7BE2EE65C666AF /* SystemClock.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		69AE29A76D07A6FF6BA6A262 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				27E07D27CD6C778497857541 /* MenuBarViewModel.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		6C65271624908534E76685AB /* App */ = {
+			isa = PBXGroup;
+			children = (
+				B07DAE777EE64AA4367DAC0C /* BatterySleepGuardApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		903848C8A2D017545094EB3C /* BatterySleepGuardTests */ = {
+			isa = PBXGroup;
+			children = (
+				D848C5E2D54B8BDC5475C3A6 /* BatchTests.swift */,
+				1A92ABAFA41B26A7D698F34A /* BatteryLogicTests.swift */,
+				9E31B20C7235050C7D4F30F8 /* HistoryTests.swift */,
+				3F39F9ECF754C8F204D28E19 /* ProcessUsageTests.swift */,
+			);
+			path = BatterySleepGuardTests;
+			sourceTree = "<group>";
+		};
+		9D84768F9BC595A9C95584C1 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				38B54487F2EFBB40484315CE /* ChartPalette.swift */,
+				007EBB2E9C59D7793983DFCC /* Formatting.swift */,
+				7CDE2F176AE9C6BECF65F1F2 /* MenuBarView.swift */,
+				DC08BE693BFC44F75C20CAA0 /* ProcessesView.swift */,
+				E90AB8FD4F1AC14CD5A37DA9 /* SettingsView.swift */,
+				207E895E5AAE5917CFE09421 /* StatisticsView.swift */,
+				6EA60F226F7413F2090CD5AF /* WindowVisibilityObserver.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B3BF7E845ACCA86775C6536B = {
+			isa = PBXGroup;
+			children = (
+				192A6AA66E313BDCCFB4B383 /* BatterySleepGuard */,
+				903848C8A2D017545094EB3C /* BatterySleepGuardTests */,
+				F97A79B63CE8CAB0088C62B6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F97A79B63CE8CAB0088C62B6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DEB3970083E7AC1A570746DC /* BatterySleepGuard.app */,
+				1F6C698A4470799B874DFF56 /* BatterySleepGuardTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		5E7BEE2FEDEEB07C3C53DA30 /* BatterySleepGuard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8637D8F5907BE0BC7B4EC302 /* Build configuration list for PBXNativeTarget "BatterySleepGuard" */;
+			buildPhases = (
+				DDF69A5B5563BEEA52A06D1A /* Sources */,
+				A13E6C34CEB3B81823DF1DFA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatterySleepGuard;
+			packageProductDependencies = (
+			);
+			productName = BatterySleepGuard;
+			productReference = DEB3970083E7AC1A570746DC /* BatterySleepGuard.app */;
+			productType = "com.apple.product-type.application";
+		};
+		EAE1D9BC5F647EC35001134A /* BatterySleepGuardTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3A32E12804BBE60FA9CC5FE6 /* Build configuration list for PBXNativeTarget "BatterySleepGuardTests" */;
+			buildPhases = (
+				8B1E2D6BBB4BDA5B16595C4C /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				97F7F46FFF1327F80CA34E4C /* PBXTargetDependency */,
+			);
+			name = BatterySleepGuardTests;
+			packageProductDependencies = (
+			);
+			productName = BatterySleepGuardTests;
+			productReference = 1F6C698A4470799B874DFF56 /* BatterySleepGuardTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F59CCBF5D92114B754948CC4 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					5E7BEE2FEDEEB07C3C53DA30 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+					EAE1D9BC5F647EC35001134A = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Manual;
+					};
+				};
+			};
+			buildConfigurationList = A54DE51E644A30F7CE50523B /* Build configuration list for PBXProject "BatterySleepGuard" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = B3BF7E845ACCA86775C6536B;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = F97A79B63CE8CAB0088C62B6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				5E7BEE2FEDEEB07C3C53DA30 /* BatterySleepGuard */,
+				EAE1D9BC5F647EC35001134A /* BatterySleepGuardTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A13E6C34CEB3B81823DF1DFA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F7FCBDE29250ED2AFCE5FB41 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8B1E2D6BBB4BDA5B16595C4C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				ED2D5CBCDDB4011C171482CC /* BatchTests.swift in Sources */,
+				62EC0FC883EAB41B6498EE9E /* BatteryLogicTests.swift in Sources */,
+				D8C5A103282176A5DC45677B /* HistoryTests.swift in Sources */,
+				3C382EF1A8A75FA2217215F2 /* ProcessUsageTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DDF69A5B5563BEEA52A06D1A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				551D9D488CFF96D1C59E4531 /* AppSettings.swift in Sources */,
+				8C7F1688ACE1AEF6442BD482 /* BatteryMonitor.swift in Sources */,
+				789F7881CBC16071584892C0 /* BatterySample.swift in Sources */,
+				CE95411B828F36DCA991D3C9 /* BatterySleepGuardApp.swift in Sources */,
+				21E1B567BF11CCE8CC2ADCF2 /* BatteryTelemetry.swift in Sources */,
+				A00ADE5E21CD7A49B11C84EE /* CPUTemperatureSensor.swift in Sources */,
+				6EC1F7824B17D90BEED5CB75 /* ChartPalette.swift in Sources */,
+				A8F4A413A2E1073C57F82938 /* ChartSeries.swift in Sources */,
+				BF9D255180BC4F978C11C175 /* DrainRateCalculator.swift in Sources */,
+				B90DB1544963DC4519E42CE6 /* Formatting.swift in Sources */,
+				122D149E493AB3A5B40E3F3F /* HistoryEntry.swift in Sources */,
+				E76F159C2D610CB8E5F472AF /* HistoryStore.swift in Sources */,
+				E2EE7C76D39F489819F05025 /* KeepAwakeService.swift in Sources */,
+				D2E2D40BF5C5FEBAE0223F68 /* LoginItemManager.swift in Sources */,
+				F154D5A793BAB79D2B12F63A /* MenuBarView.swift in Sources */,
+				6AC81F08DB1856497D72992C /* MenuBarViewModel.swift in Sources */,
+				EBA8422CB14C1D06AD63DE12 /* NotificationService.swift in Sources */,
+				B480336DE9E3833AC9FD1555 /* PersistenceService.swift in Sources */,
+				3D56AF872BF152DEF9C186EB /* ProcessEnergyMonitor.swift in Sources */,
+				45D5CC1E8D572A0A48A13D08 /* ProcessUsage.swift in Sources */,
+				66207D0AC837644A1039EE67 /* ProcessesView.swift in Sources */,
+				BF0F9173B8132BB7E53F246E /* SettingsView.swift in Sources */,
+				D1F643590C3EE59AC0EEC4D0 /* SleepController.swift in Sources */,
+				995701040DD19384CC04DB6B /* SleepTriggerPolicy.swift in Sources */,
+				8EF8ABCFBED451FC4CD070EA /* StatisticsView.swift in Sources */,
+				6E71426DA41E020360B327E3 /* SystemClock.swift in Sources */,
+				E550085B7676654C07DC8C0A /* WindowVisibilityObserver.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		97F7F46FFF1327F80CA34E4C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5E7BEE2FEDEEB07C3C53DA30 /* BatterySleepGuard */;
+			targetProxy = 50571B1DA6216053267A6008 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4742140014FCAB405BBDD543 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		6E2CC7C3FDA9BB8414CF0DDA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BatterySleepGuardTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BatterySleepGuard.app/Contents/MacOS/BatterySleepGuard";
+			};
+			name = Release;
+		};
+		A050478F8143C49522D2F297 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BatterySleepGuard/BatterySleepGuard.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BatterySleepGuard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BatterySleepGuard;
+				PRODUCT_NAME = BatterySleepGuard;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		A9B2D156115972843FCACA7E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BatterySleepGuardTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/BatterySleepGuard.app/Contents/MacOS/BatterySleepGuard";
+			};
+			name = Debug;
+		};
+		C8A92E236D710803A247BA1A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BatterySleepGuard/BatterySleepGuard.entitlements;
+				COMBINE_HIDPI_IMAGES = YES;
+				CURRENT_PROJECT_VERSION = 1;
+				ENABLE_HARDENED_RUNTIME = YES;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BatterySleepGuard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MARKETING_VERSION = 1.0.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.example.BatterySleepGuard;
+				PRODUCT_NAME = BatterySleepGuard;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		CBCEF9D7DD68450192D3AAFB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3A32E12804BBE60FA9CC5FE6 /* Build configuration list for PBXNativeTarget "BatterySleepGuardTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A9B2D156115972843FCACA7E /* Debug */,
+				6E2CC7C3FDA9BB8414CF0DDA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		8637D8F5907BE0BC7B4EC302 /* Build configuration list for PBXNativeTarget "BatterySleepGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A050478F8143C49522D2F297 /* Debug */,
+				C8A92E236D710803A247BA1A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		A54DE51E644A30F7CE50523B /* Build configuration list for PBXProject "BatterySleepGuard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4742140014FCAB405BBDD543 /* Debug */,
+				CBCEF9D7DD68450192D3AAFB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F59CCBF5D92114B754948CC4 /* Project object */;
+}
